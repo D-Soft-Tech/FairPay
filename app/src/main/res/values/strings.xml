@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fairpay</string>
+    <string name="onboarding_s1_heading">Split Bills Painlessly</string>
+    <string name="onboarding_s2_heading">Plan Your Budget</string>
+    <string name="onboarding_s3_heading"><![CDATA[Cloud Backup & Sync]]></string>
+    <string name="onboarding_s1_sub_text">Simply input an amount of money spent, select who participated in the expense and let the app do all work.</string>
+    <string name="onboarding_s2_sub_text">Keep track of your joint expenses together. Add expenses and settle debts in any convenient currency.</string>
+    <string name="onboarding_s3_sub_text">Never lose your data, even if you decide to change your phone. Sync data everytime when you connect internet.</string>
+    <string name="content_desc">Image is here</string>
+    <string name="login">Log In</string>
+    <string name="get_started">Get Started!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
