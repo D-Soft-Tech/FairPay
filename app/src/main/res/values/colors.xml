@@ -10,4 +10,5 @@
     <color name="background_light_mode">#F2F2F2</color>
     <color name="background_dark_mode">#1E1F20</color>
     <color name="secondary_color">#FFCA62</color>
+    <color name="tab_layout_default_state">#E0E0E0</color>
 </resources>
