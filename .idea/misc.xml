@@ -4,24 +4,61 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/drawable/add_curr_bottom_sheet_bg.xml" value="0.30615384615384617" />
+        <entry key="app/src/main/res/drawable/back_arrow_bg.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/create_grp_goto_activity_bg.xml" value="0.30615384615384617" />
+        <entry key="app/src/main/res/drawable/currency_card_bg.xml" value="0.30615384615384617" />
+        <entry key="app/src/main/res/drawable/currency_symbol_bg.xml" value="0.30615384615384617" />
+        <entry key="app/src/main/res/drawable/currency_symbol_with_white_bg.xml" value="0.30615384615384617" />
         <entry key="app/src/main/res/drawable/custom_button_bg.xml" value="0.3109375" />
         <entry key="app/src/main/res/drawable/custom_button_bg_close_ends.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/default_currency_card_bg.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/edit_text_bg.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/face_detection_btn_bg.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/facebook_btn_bg.xml" value="0.30615384615384617" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/ic_dollar.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/ic_face_recog.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/ic_fair_pay_without_text.xml" value="0.3109375" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/selected_currency_card_bg.xml" value="0.30615384615384617" />
+        <entry key="app/src/main/res/drawable/selected_currency_symbol_bg.xml" value="0.30615384615384617" />
         <entry key="app/src/main/res/drawable/splash_screen_dark_mode.xml" value="0.22777777777777777" />
         <entry key="app/src/main/res/drawable/splash_screen_light_mode.xml" value="0.22777777777777777" />
         <entry key="app/src/main/res/drawable/tab_layout_background.xml" value="0.2851851851851852" />
         <entry key="app/src/main/res/drawable/tablayout.xml" value="0.3109375" />
         <entry key="app/src/main/res/drawable/tablayout_not_selected.xml" value="0.2861111111111111" />
         <entry key="app/src/main/res/drawable/tablayout_selected.xml" value="0.3109375" />
+        <entry key="app/src/main/res/drawable/twitter_btn_bg.xml" value="0.30615384615384617" />
         <entry key="app/src/main/res/font/avenir_ondensed_hand.xml" value="0.22777777777777777" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/add_curr_rv_item.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/add_currency_screen.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/change_password_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/change_password_screen_fragment.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/create_group_screen.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/currency_rv_item.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/forgot_password_screen.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/forgot_password_screen_fragment.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_create_group_screen.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/fragment_forgot_password_screen.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_login_screen.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen1.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen2.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/fragment_onboarding_screen3.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/fragment_view_pager.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/login_screen.xml" value="0.22" />
         <entry key="app/src/main/res/layout/onboarding_screen_1.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/onboarding_screen_2.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/onboarding_screen_3.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/other_info_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/registration_success_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/signup_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/signup_screen_fragment.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/testing_profile_image_view.xml" value="0.2947916666666667" />
+        <entry key="common/src/main/res/drawable/default_currency_symbol_bg.xml" value="0.1" />
+        <entry key="features/onboarding/src/main/res/layout/fragment_view_pager.xml" value="0.29025641025641025" />
       </map>
     </option>
   </component>

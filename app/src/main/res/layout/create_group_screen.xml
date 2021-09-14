@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/dimen_30dp"
+        android:background="@color/background_light_mode">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/create_grp_scr_hl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/create_grp_scr_hl_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <ImageView
+            android:id="@+id/create_grp_fairPay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/create_grp_scr_hl_1"
+            app:srcCompat="@drawable/ic_fair_pay_without_text" />
+
+        <TextView
+            android:id="@+id/welcome_heading"
+            style="@style/onboarding_screen_heading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:text="@string/welcome_to_fairpay"
+            android:textSize="@dimen/dimen_24sp"
+            app:layout_constraintEnd_toEndOf="@+id/create_grp_fairPay_image"
+            app:layout_constraintStart_toStartOf="@+id/create_grp_fairPay_image"
+            app:layout_constraintTop_toBottomOf="@+id/create_grp_fairPay_image" />
+
+        <TextView
+            android:id="@+id/welcome_details"
+            style="@style/page_sub_heading_detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_group_details"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/tertiary_color_variant_a"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_heading" />
+
+
+        <android.widget.Button
+            android:id="@+id/forgot_password_send_email_btn"
+            style="@style/primary_button"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:background="@drawable/custom_button_bg_close_ends"
+            android:fontFamily="@font/avenir_heavy"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:text="@string/create_grp"
+            app:layout_constraintEnd_toEndOf="@+id/welcome_details"
+            app:layout_constraintStart_toStartOf="@+id/welcome_details"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_details" />
+
+        <android.widget.Button
+            android:id="@+id/goto_activity"
+            style="@style/primary_button"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:background="@drawable/create_grp_goto_activity_bg"
+            android:fontFamily="@font/avenir_heavy"
+
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:text="@string/goto_activity"
+            app:layout_constraintEnd_toEndOf="@+id/forgot_password_send_email_btn"
+            app:layout_constraintStart_toStartOf="@+id/forgot_password_send_email_btn"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_password_send_email_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

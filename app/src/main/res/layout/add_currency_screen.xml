@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_curr_bottom_sheet_bg"
+    android:paddingHorizontal="@dimen/dimen_30dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/add_curr_hr_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_bg"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:contentDescription="@string/content_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_curr_hr_gl" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/page_heading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:text="@string/add_currency"
+            app:layout_constraintStart_toStartOf="@+id/back_btn"
+            app:layout_constraintTop_toBottomOf="@+id/back_btn" />
+
+        <SearchView
+            android:id="@+id/search_cur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@drawable/edit_text_bg"
+            android:queryHint="@string/cur_rv_sch_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/popular_curr"
+            style="@style/page_sub_heading_detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:text="@string/popular_cur"
+            android:textColor="@color/tertiary_color_variant_b"
+            app:layout_constraintStart_toStartOf="@+id/search_cur"
+            app:layout_constraintTop_toBottomOf="@+id/search_cur" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popular_curr_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintEnd_toEndOf="@+id/search_cur"
+            app:layout_constraintStart_toStartOf="@+id/popular_curr"
+            app:layout_constraintTop_toBottomOf="@+id/popular_curr" />
+
+        <TextView
+            android:id="@+id/all_curr"
+            style="@style/page_sub_heading_detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:text="@string/all_curr"
+            android:textColor="@color/tertiary_color_variant_b"
+            app:layout_constraintStart_toStartOf="@+id/popular_curr_rv"
+            app:layout_constraintTop_toBottomOf="@+id/popular_curr_rv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_curr_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/search_cur"
+            app:layout_constraintStart_toStartOf="@+id/all_curr"
+            app:layout_constraintTop_toBottomOf="@+id/all_curr" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -7,7 +7,51 @@
 
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="com.example.fairpay.oboarding.ViewPagerFragment"
+        android:name="com.decatom.fairpay.onboarding.ui.fragments.ViewPagerFragment"
         android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" />
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.fairpay.views.fragments.LoginScreen"
+        android:label="LoginScreen" >
+        <action
+            android:id="@+id/action_loginScreen_to_signupScreen"
+            app:destination="@id/signupScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_forgotPasswordScreen"
+            app:destination="@id/forgotPasswordScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_createGroupScreen"
+            app:destination="@id/createGroupScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupScreen"
+        android:name="com.example.fairpay.views.fragments.SignupScreen"
+        android:label="SignupScreen" >
+        <action
+            android:id="@+id/action_signupScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_signupScreen_to_forgotPasswordScreen"
+            app:destination="@id/forgotPasswordScreen" />
+        <action
+            android:id="@+id/action_signupScreen_to_createGroupScreen"
+            app:destination="@id/createGroupScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordScreen"
+        android:name="com.example.fairpay.views.fragments.ForgotPasswordScreen"
+        android:label="ForgotPasswordScreen" >
+        <action
+            android:id="@+id/action_forgotPasswordScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/createGroupScreen"
+        android:name="com.example.fairpay.views.fragments.CreateGroupScreen"
+        android:label="CreateGroupScreen" />
 </navigation>

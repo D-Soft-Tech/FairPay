@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_light_mode"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/hr_gl4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/forgot_password_send_email_btn"
+        app:layout_constraintEnd_toStartOf="@+id/forgot_password_send_email_btn"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="@color/background_light_mode"
+        app:layout_constraintStart_toStartOf="@+id/hr_gl3"
+        app:layout_constraintTop_toTopOf="@+id/forgot_password_send_email_btn"
+        app:tabGravity="start"
+        app:tabBackground="@drawable/tab_layout_background"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed" />
+
+    <android.widget.Button
+        style="@style/primary_button"
+        android:id="@+id/forgot_password_send_email_btn"
+        android:text="@string/get_started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vr_gl_2"
+        app:layout_constraintTop_toTopOf="@+id/hr_gl4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hr_gl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hr_gl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vr_gl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

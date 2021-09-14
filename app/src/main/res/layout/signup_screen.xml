@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="signupFragment"
+            type="com.example.fairpay.views.fragments.SignupScreen" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_light_mode"
+        android:paddingVertical="@dimen/dimen_30dp"
+        android:paddingStart="@dimen/dimen_30dp"
+        tools:ignore="RtlSymmetry">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/page_heading_text"
+                android:id="@+id/forgot_password_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:layout_marginTop="@dimen/dimen_35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+            <TextView
+                style="@style/top_corner_signup_text"
+                android:id="@+id/signup"
+                android:text="@string/login"
+                android:onClick="@{(v) -> signupFragment.navigate(v)}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.01" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.33" />
+
+            <TextView
+                style="@style/page_sub_heading_text"
+                android:id="@+id/forgot_password_sub_heading_txt"
+                android:text="@string/welcome_to_fairpay"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/forgot_password_heading"
+                app:layout_constraintTop_toBottomOf="@+id/forgot_password_heading"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                style="@style/form_edit_text_heading"
+                android:id="@+id/forgot_password_email_form_heading"
+                android:text="@string/email"
+                app:layout_constraintStart_toStartOf="@id/forgot_password_sub_heading_txt"
+                app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+            <EditText
+                style="@style/form_edit_text"
+                android:id="@+id/login_email_address"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:inputType="textEmailAddress"
+                app:layout_constraintStart_toStartOf="@+id/forgot_password_email_form_heading"
+                app:layout_constraintTop_toBottomOf="@+id/forgot_password_email_form_heading" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/form_edit_text_heading"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:text="@string/password"
+                app:layout_constraintStart_toStartOf="@+id/login_email_address"
+                app:layout_constraintTop_toBottomOf="@+id/login_email_address" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/form_edit_text_heading"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:text="@string/forgot_password"
+                android:onClick="@{(v)-> signupFragment.navigate(v)}"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/login_email_address"
+                app:layout_constraintTop_toBottomOf="@+id/login_email_address" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_30dp"
+                app:boxBackgroundMode="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_bg"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        <ImageButton-->
+            <!--            android:id="@+id/imageButton"-->
+            <!--            android:layout_width="@dimen/dimen_55dp"-->
+            <!--            android:layout_height="0dp"-->
+            <!--            android:background="@drawable/face_detection_btn_bg"-->
+            <!--            android:contentDescription="@string/content_desc"-->
+            <!--            app:layout_constraintBottom_toBottomOf="@+id/forgot_password_send_email_btn"-->
+            <!--            app:layout_constraintEnd_toStartOf="@+id/textInputLayout"-->
+            <!--            app:layout_constraintStart_toStartOf="@+id/textInputLayout"-->
+            <!--            app:layout_constraintTop_toTopOf="@+id/forgot_password_send_email_btn"-->
+            <!--            app:srcCompat="@drawable/ic_face_recog" />-->
+
+
+            <android.widget.Button
+                android:id="@+id/forgot_password_send_email_btn"
+                style="@style/primary_button"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:onClick="@{(v)-> signupFragment.navigate(v)}"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:text="@string/join_fairpay"
+                app:layout_constraintBottom_toTopOf="@id/textView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/form_edit_text_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_30dp"
+                android:text="@string/signup_with_social"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/forgot_password_send_email_btn"
+                app:layout_constraintStart_toStartOf="@+id/forgot_password_send_email_btn"
+                app:layout_constraintTop_toBottomOf="@+id/forgot_password_send_email_btn" />
+
+
+            <android.widget.Button
+                android:id="@+id/facebook_login"
+                style="@style/facebook_login_btn"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:drawablePadding="@dimen/dimen_8dp"
+                app:layout_constraintEnd_toStartOf="@+id/twitter_login"
+                app:layout_constraintStart_toStartOf="@+id/forgot_password_send_email_btn"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <android.widget.Button
+                android:id="@+id/twitter_login"
+                style="@style/twitter_login_btn"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:drawablePadding="@dimen/dimen_10dp"
+                app:layout_constraintStart_toEndOf="@+id/facebook_login"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+                app:layout_constraintTop_toTopOf="@+id/facebook_login" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
